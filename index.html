@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='Amazon.css'>
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="https:/pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:none;
+
+
+}
+
+#header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:8px 25px;
+    background:	#FFC0CB;
+    background-size:cover;
+    background-repeat:no-repeat;
+    z-index:999;
+    position:sticky;
+    top:0;
+    right:0;
+    
+   
+
+}
+
+.logo{
+    width:50px;
+    height:45px;
+
+}
+
+#nav{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+#nav li{
+    list-style:none;
+    padding:0 20px;
+    text-decoration:none;
+    position: relative;
+}
+
+#nav li a{
+    text-decoration: none;
+    font-size:20px;
+    color:black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: 0.3;
+    
+}
+
+#nav li a:hover{
+    color: rgb(236, 70, 20);
+}
+
+#nav li a.active{
+    color:rgb(251, 255, 0);
+}
+#nav li a.active::after,
+#nav li a:hover::after{
+    content:"";
+    width:50%;
+    height:2px;
+    background-color: aqua;
+    background:aqua;
+    position: absolute;
+    bottom: -3px;
+    left:22px;
+}
+
+#center{
+    background:url("image/pink.jpg");
+    height:90vh;
+    width:100%;
+    background-position:top 25% right 0;
+    background-size: cover;
+    padding:20px;
+    flex-direction:column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.size{
+    align-items: center;
+    margin-top:170px;
+}
+
+.size h2{
+    font-size:50px;
+    font-weight:700px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+
+}
+
+.size h4{
+    font-size:20px;
+    font-weight:700px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    
+
+}
+
+.size p{
+    padding:4px;
+}
+
+.size button{
+    padding:6px;
+    margin:3px 3px;
+    background-color:rgb(251, 255, 0);
+    border-radius:5px;
+    border: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.size button:hover{
+    color:blue;
+}
+
+.size h2 span{
+    color:rgb(251, 255, 0);
+    
+
+}
+
+.size h1 span{
+    color: rgb(0, 140, 255);
+
+    font-size:30px;
+    
+}
+
+.feature_box {
+    width:180px;
+    text-align: center;
+    padding:25px 15px;
+    box-shadow:20px 20px 34px rgba(0,0,0,0.03);
+    border:1px solid #cce7d0;
+    border-radius:4px;
+    margin:15px 0;
+}
+
+.feature_box img:hover{
+    box-shadow: 8px 8px 8px rgba(80,62,221,0.1);
+
+
+}
+.feature_box img{
+    width:100%;
+    margin-bottom:10px;
+}
+
+
+.feature_box h6{
+    display:inline-block;
+    padding:9px 6px 8px 9px;
+    line-height:1;
+    border-radius:4px;
+    color:#088178;
+    background-color: #FFC0CB;
+    
+    
+}
+
+.padding{
+    padding:40px 30px;
+}
+
+#extre_feature{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+.pre_clllection {
+    width: 275px;
+    height:275px;
+    text-align: center;
+    padding:25px 15px;
+    box-shadow:20px 20px 34px rgba(0,0,0,0.03);
+    border:1px solid #cce7d0;
+    border-radius:4px;
+    margin:15px 0;
+}
+
+.pre_clllection img:hover{
+    box-shadow: 8px 8px 8px rgba(80,62,221,0.1);
+
+
+}
+.pre_clllection img{
+    width:250px;
+    height:250px;
+    margin-bottom:10px;
+}
+
+
+.pre_clllection h6{
+    display:inline-block;
+    padding:9px 6px 8px 9px;
+    line-height:1;
+    border-radius:10px;
+    color:#088178;
+    background-color: #FFC0CB;
+    
+    
+}
+
+.padding1{
+    padding:40px 30px;
+}
+
+#product_feature{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+.new_collection{
+    width:350px;
+    height:75px;
+    background:#FFC0CB;
+    margin-left:500px;
+    padding:10px;
+    border-radius:5px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.new_collection h1{
+    margin-left:75px;
+    
+
+}
+.new_collection h3{
+    margin-left:40px;
+
+}
+
+.new_collection h1 span{
+    color:darkgreen; 
+
+}
+
+#offers{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    background-image: url(image/SHOPEE.png);
+    width:100%;
+    height:60vh;
+    background-position:center;
+    background-size:cover;
+    margin-top:40px;
+    color: white;
+
+
+
+
+}
+.summer_off h1{
+    font-size:43px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+}
+
+.summer_off h4{
+    font-size:30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.summer_off h4 span{
+    color:darkgreen;
+}
+
+.summer_off h1 span{
+    color:yellow;
+}
+
+.new_collection:hover{
+    color:blueviolet;
+    background-color:greenyellow;
+
+}
+
+.pre_clllection h6:hover{
+    color: aqua;
+    background-color:yellow;
+}
+button.normal{
+    margin-top:20px;
+}
+button.normal{
+    font-size:14px;
+    font-weight:600;
+    padding: 15px;
+    background-color:white;
+    cursor: pointer;
+    border:none;
+    border-radius:4px;
+}
+
+#offers button:hover{
+    background-color:yellow;
+    color:white;
+
+}
+        
+
+    </style>
+</head>
+<body>
+    <section id="header">
+       
+            <a href="#"><img src="image/avviare-logo.png" class="logo" alt=""></a>
+        
+
+        
+        
+        <div>
+            <ul id="nav">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+            </ul>
+        </div>
+
+    
+
+        
+    </section>
+    <section id="center">
+        <div class="size">
+            <h4>Buy-One Get-one Free</h4>
+            <h2><span>Super</span> Value Deals</h2>
+            <h1><span>On all Products</span></h1>
+            <p>Save More with coupons & Get up to 70% off!</p>
+            <button>Shop Now</button>  
+        </div>
+         
+
+    </section>
+    <section id="extre_feature" class="padding">
+        <div class="feature_box">
+            <img src="image/f1.png" alt>
+            <h6>Free Shipping</h6>
+        </div>
+        <div class="feature_box">
+            <img src="image/f2.png" alt>
+            <h6>Online Order</h6>
+        </div>
+        <div class="feature_box">
+            <img src="image/f3.png" alt>
+            <h6>Save Money</h6>
+        </div>
+        <div class="feature_box">
+            <img src="image/f4.png" alt>
+            <h6>Promotion</h6>
+        </div>
+      
+        <div class="feature_box">
+            <img src="image/f6.png" alt>
+            <h6>24*7 Suppport</h6>
+        </div>
+    </section>
+
+    <div class="new_collection">
+        <h1>New <span>Collection</span></h2>
+        <h3>Flat 50% Off On Every Collection</h3>
+            
+    </div>
+    
+        
+  
+    <section id="product_feature" class="padding1">
+    
+        <div class="pre_clllection">
+            <img src="image/P4.jpg" alt>
+            <h6>Western Dress</h6>
+        </div>
+        
+        
+        <div class="pre_clllection">
+            <img src="image/P5.jpg" alt>
+            <h6>Amazing Shoes Collection</h6>
+        </div>
+        <div class="pre_clllection">
+            <img src="image/P7.jpg" alt>
+            <h6>Muliticolor T-shirt</h6>
+        </div>
+
+    </section>
+
+<section id="offers"  class="summer_off">
+    <h4>COOL <span>OFFERS</span> OF SUMMER</h4>
+    <h1>Up To <span>75%</span> Off All T-shirt And Accessories</h1>
+    <button class="normal">Explore More</button>
+</section>
+
+
+    
+</body>
+</html>
